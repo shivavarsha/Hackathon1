@@ -5,10 +5,7 @@ async function getBreweries() {
       });
       let data = await dataList.json();
    const breweriesList = document.createElement("div");
-    console.log("hi");
     document.body.append(breweriesList);
-
-    console.log(data);
     data.forEach(element => {
         let val;
         val="Name : ";
